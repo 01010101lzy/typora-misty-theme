@@ -4,45 +4,49 @@ Brought to you with ❤️ by E-Tiger Studio, 2017-2019
 https://github.com/etigerstudio/typora-misty-theme
  */
 
-@import 'codeblock-dark';
+@import "codeblock-dark";
 
 :root {
-    --control-text-color: #8B97A3;
+    --control-text-color: #8b97a3;
     --side-bar-bg-color: #171717;
     --bg-color: #242424;
-    --window-border: 1px solid rgba(0,0,0,.07);
+    --window-border: 1px solid rgba(0, 0, 0, 0.07);
     --active-file-bg-color: #242424;
-    --active-file-text-color: #B8C8D9;
+    --active-file-text-color: #b8c8d9;
     --item-hover-bg-color: #242424;
-    --heading-char-color: #4D6580;
-    --text-color: #8B97A3;
-    --active-toggle-btn-color: #53575C;
-    --rawblock-edit-panel-bd: #3A3C3D;
+    --heading-char-color: #4d6580;
+    --text-color: #8b97a3;
+    --active-toggle-btn-color: #53575c;
+    --rawblock-edit-panel-bd: #3a3c3d;
 }
 
 html {
     font-size: 16px;
     -webkit-font-smoothing: subpixel-antialiased;
-    background-color: #2B2B2B;
+    background-color: #2b2b2b;
 }
 
 body {
-    font-family: "SF UI Text", "PingFang SC", -apple-system, -apple-system-body, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "微软雅黑", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "SF UI Text", "PingFang SC", -apple-system, -apple-system-body,
+        BlinkMacSystemFont, "Iosevka Sparkle", "Sarasa Gothic SC",
+        "Sarasa Gothic TC", "Sarasa Gothic JP", "Sarasa Gothic KR", "Segoe UI",
+        "Microsoft YaHei", "微软雅黑", Helvetica, Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     /*font-family: -apple-system, -apple-system-body, BlinkMacSystemFont, "PingFang SC", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
-    color: #A9B7C6;
+    color: #a9b7c6;
     line-height: 1.5;
     font-weight: 300;
 }
 
-#write{
+#write {
     max-width: 860px;
-  	margin: 0 auto;
-  	padding: 20px 30px 40px 30px;
-	padding-top: 20px;
+    margin: 0 auto;
+    padding: 20px 30px 40px 30px;
+    padding-top: 20px;
     padding-bottom: 100px;
 }
 #write > ul:first-child,
-#write > ol:first-child{
+#write > ol:first-child {
     margin-top: 30px;
 }
 
@@ -53,7 +57,7 @@ body > *:last-child {
     margin-bottom: 0 !important;
 }
 a {
-    color: #6DADF2;
+    color: #6dadf2;
 }
 h1,
 h2,
@@ -67,7 +71,7 @@ h6 {
     font-weight: 400;
     line-height: 1.4;
     cursor: text;
-    color: #B8C8D9;
+    color: #b8c8d9;
 }
 h1:hover a.anchor,
 h2:hover a.anchor,
@@ -101,20 +105,20 @@ h5 code {
 }
 h6 tt,
 h6 code {
-font-size: inherit;
+    font-size: inherit;
 }
 h1 {
     text-align: center;
-    padding-bottom: .3em;
+    padding-bottom: 0.3em;
     font-size: 2.25em;
     line-height: 1.2;
     margin: 1em auto 1.2em auto;
     font-weight: 300;
     /*border-bottom: 1px solid #eee;*/
 }
-h1:after{
-border-bottom: 2px dashed #5F8055;
-    content: '';
+h1:after {
+    border-bottom: 2px dashed #5f8055;
+    content: "";
     width: 100px;
     display: block;
     margin: 0.2em auto 0 auto;
@@ -124,14 +128,14 @@ border-bottom: 2px dashed #5F8055;
     margin-top: 0.83rem;
 }*/
 h2 {
-   /*padding-bottom: .3em;
+    /*padding-bottom: .3em;
     font-size: 1.75em;
     line-height: 1.225;
     border-bottom: 1px solid #eee;*/
     font-size: 1.75em;
     padding-left: 9px;
     line-height: 1.4;
-    border-left: 6px solid #3D5266;
+    border-left: 6px solid #3d5266;
 }
 h3 {
     font-size: 1.5em;
@@ -139,8 +143,8 @@ h3 {
 }
 h3:before {
     border-radius: 50%;
-    background-color: #4D6580;
-    content: '';
+    background-color: #4d6580;
+    content: "";
     width: 6px;
     display: inline-block;
     height: 6px;
@@ -148,8 +152,8 @@ h3:before {
     margin-bottom: 0.18em;
     margin-right: 8px;
 }
-#write>h3.md-focus:before,
-#write>h4.md-focus:before {
+#write > h3.md-focus:before,
+#write > h4.md-focus:before {
     background-color: transparent;
     width: auto;
     height: auto;
@@ -158,8 +162,8 @@ h4 {
     font-size: 1.25em;
 }
 h4:before {
-    background-color: #4D6580;
-    content: '';
+    background-color: #4d6580;
+    content: "";
     width: 6px;
     display: inline-block;
     height: 2px;
@@ -172,26 +176,26 @@ h5 {
 }
 h6 {
     font-size: 1em;
-    color: #93A0AD;
+    color: #93a0ad;
 }
 p,
 blockquote,
 ul,
 ol,
 dl,
-table{
+table {
     margin: 0.8em 0;
 }
-li>ol,
-li>ul {
+li > ol,
+li > ul {
     margin: 0 0;
 }
 hr {
-  height: 0.25em;
-  padding: 0;
-  margin: 24px 0;
-  background-color: #3A3C3D;
-  border: 0;
+    height: 0.25em;
+    padding: 0;
+    margin: 24px 0;
+    background-color: #3a3c3d;
+    border: 0;
 }
 
 body > h2:first-child {
@@ -247,9 +251,9 @@ ol:last-child {
 }
 blockquote {
     /*border-left: 4px solid #dddddd;*/
-    border-left: 4px dotted #4E555C;
+    border-left: 4px dotted #4e555c;
     padding: 0 12px;
-    color: #8B97A3;
+    color: #8b97a3;
     font-size: 0.9em;
 }
 blockquote blockquote {
@@ -301,10 +305,13 @@ tt {
     /*font-family: Consolas, "Liberation Mono", Courier, monospace;*/
     /*padding: 2px 4px 0px 4px;*/
     /*font-size: 0.9em;*/
-    font-family: "SF Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace, "PingFang SC", "Microsoft YaHei", "微软雅黑";
+    font-family: "SF Mono", "Iosevka", "Ubuntu Mono", "Hack", "Input", Consolas,
+        "Liberation Mono", Menlo, Courier, monospace, "Sarasa Mono SC",
+        "PingFang SC", "Microsoft YaHei", "微软雅黑";
 }
 
-code, tt {
+code,
+tt {
     margin: 0 2px;
     padding: 2px 4px;
     background-color: #414952;
@@ -312,7 +319,7 @@ code, tt {
 }
 
 .md-fences {
-    background-color: #3A3C3D;
+    background-color: #3a3c3d;
     margin-bottom: 15px;
     margin-top: 15px;
     padding: 0.2em 1em;
@@ -328,7 +335,7 @@ code, tt {
 	padding-left:32px;
 }*/
 
-.md-task-list-item>input {
+.md-task-list-item > input {
     margin-left: -1.45em;
     margin-top: calc(0.9em - 10px);
 }
@@ -354,52 +361,54 @@ code, tt {
 }
 
 #write pre.md-meta-block {
-	padding: 1rem;
+    padding: 1rem;
     font-size: 85%;
     line-height: 1.45;
     background-color: #323538;
     border: 0;
     border-radius: 3px;
-    color: #8A9199;
+    color: #8a9199;
     margin-top: 0 !important;
 }
 
-.mathjax-block>.code-tooltip {
-	bottom: .375rem;
+.mathjax-block > .code-tooltip {
+    bottom: 0.375rem;
 }
 
-#write>h3.md-focus:before{
-	left: -1.5625rem;
-	top: .375rem;
+#write > h3.md-focus:before {
+    left: -1.5625rem;
+    top: 0.375rem;
 }
-#write>h4.md-focus:before{
-	left: -1.5625rem;
-	top: .285714286rem;
+#write > h4.md-focus:before {
+    left: -1.5625rem;
+    top: 0.285714286rem;
 }
-#write>h5.md-focus:before{
-	left: -1.5625rem;
-	top: .285714286rem;
+#write > h5.md-focus:before {
+    left: -1.5625rem;
+    top: 0.285714286rem;
 }
-#write>h6.md-focus:before{
-	left: -1.5625rem;
-	top: .285714286rem;
+#write > h6.md-focus:before {
+    left: -1.5625rem;
+    top: 0.285714286rem;
 }
-.md-image>.md-meta {
+.md-image > .md-meta {
     border: 1px solid #ddd;
     border-radius: 3px;
-    font-family: "SF Mono", Consolas, "PingFang SC", "Liberation Mono", Courier, monospace, "Microsoft YaHei", "微软雅黑";
+    font-family: "SF Mono", "Iosevka", "Ubuntu Mono", "Hack", "Input", Consolas,
+        "Liberation Mono", Menlo, Courier, monospace, "Sarasa Mono SC",
+        "PingFang SC", "Microsoft YaHei", "微软雅黑";
     padding: 2px 4px 0px 4px;
     font-size: 0.9em;
     color: inherit;
 }
 
-.md-tag{
-	color: inherit;
+.md-tag {
+    color: inherit;
 }
 
 .md-toc {
-    margin-top:20px;
-    padding-bottom:20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
 }
 
 .sidebar-tabs {
@@ -416,7 +425,7 @@ code, tt {
 }
 
 #typora-quick-open > #typora-quick-open-input > input::placeholder {
-    color: #7C8691;
+    color: #7c8691;
 }
 
 .typora-quick-open-item {
@@ -435,12 +444,18 @@ code, tt {
     top: 10px;
 }
 
-header, .context-menu, .megamenu-content, footer{
-  font-family: "SF UI Text", "PingFang SC", -apple-system, -apple-system-body, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "微软雅黑", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+header,
+.context-menu,
+.megamenu-content,
+footer {
+    font-family: "SF UI Text", "PingFang SC", -apple-system, -apple-system-body,
+        BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "微软雅黑", Helvetica,
+        Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol";
 }
 
 .file-node-content:hover .file-node-icon,
-.file-node-content:hover .file-node-open-state{
+.file-node-content:hover .file-node-open-state {
     visibility: visible;
 }
 
@@ -455,25 +470,30 @@ header, .context-menu, .megamenu-content, footer{
 .pin-outline .outline-active,
 .pin-outline #outline-content .outline-active strong {
     font-weight: 400;
-    color: #A0AEBD;
+    color: #a0aebd;
 }
 
 .outline-label {
     font-weight: 300;
-    color: #7C8691;
+    color: #7c8691;
 }
 
-strong, b {
+strong,
+b {
     font-weight: 500;
 }
 
 .file-list-item-summary {
-    color: #77818C;
-    font-family: "SF UI Text", "PingFang SC", -apple-system, -apple-system-body, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "微软雅黑", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #77818c;
+    font-family: "SF UI Text", "PingFang SC", -apple-system, -apple-system-body,
+        BlinkMacSystemFont, "Iosevka Sparkle", "Sarasa Gothic SC",
+        "Sarasa Gothic TC", "Sarasa Gothic JP", "Sarasa Gothic KR", "Segoe UI",
+        "Microsoft YaHei", "微软雅黑", Helvetica, Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .active > .file-list-item-summary {
-    color: #B8C8D9;
+    color: #b8c8d9;
 }
 
 .file-list-item-file-name {
@@ -481,44 +501,52 @@ strong, b {
 }
 
 #write div.md-toc-tooltip {
-    background-color: #2B2B2B;
+    background-color: #2b2b2b;
 }
 
 /* right click menu */
 .context-menu {
-  background-color: #242424;
+    background-color: #242424;
 }
 
 .context-menu.dropdown-menu .divider {
-  background-color: #53575C;
+    background-color: #53575c;
 }
 
 /* focus mode */
 .on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) * {
-  color: #575E66 !important;
+    color: #575e66 !important;
 }
 
 .on-focus-mode .md-end-block:not(.md-focus) img,
-.on-focus-mode .md-task-list-item:not(.md-focus-container)>input {
-  color: #575E66 !important;
+.on-focus-mode .md-task-list-item:not(.md-focus-container) > input {
+    color: #575e66 !important;
 }
 
-.on-focus-mode li[cid]:not(.md-focus-container){
-  color: #575E66;
+.on-focus-mode li[cid]:not(.md-focus-container) {
+    color: #575e66;
 }
 
-.on-focus-mode .md-fences.md-focus .CodeMirror-code>*:not(.CodeMirror-activeline) *,
+.on-focus-mode
+    .md-fences.md-focus
+    .CodeMirror-code
+    > *:not(.CodeMirror-activeline)
+    *,
 .on-focus-mode .CodeMirror.cm-s-inner:not(.CodeMirror-focused) * {
-  color: #575E66 !important;
+    color: #575e66 !important;
 }
 
 .on-focus-mode .md-focus,
 .on-focus-mode .md-focus-container {
-  color: #B4C3D4;
+    color: #b4c3d4;
 }
 
-.on-focus-mode #typora-source .CodeMirror-code>*:not(.CodeMirror-activeline) * {
-  color: #575E66 !important;
+.on-focus-mode
+    #typora-source
+    .CodeMirror-code
+    > *:not(.CodeMirror-activeline)
+    * {
+    color: #575e66 !important;
 }
 
 /*p .md-image{
@@ -528,26 +556,31 @@ strong, b {
 }*/
 
 .menu-style-btn {
-    border: #53575C 1px solid;
+    border: #53575c 1px solid;
 }
 
 .modal-content {
-    border: #53575C 1px solid;
+    border: #53575c 1px solid;
 }
 
 input {
-    border-color: #53575C;
+    border-color: #53575c;
 }
 
 footer.stopselect {
-    border-top-color: #53575C;
+    border-top-color: #53575c;
 }
 
-.btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open>.dropdown-toggle.btn-default {
+.btn-default.active,
+.btn-default.focus,
+.btn-default:active,
+.btn-default:focus,
+.btn-default:hover,
+.open > .dropdown-toggle.btn-default {
     border-color: #53575c;
 }
 
 .ty-tooltip {
-    background-color: #3A3C3D;
-    color: #B8C8D9;
+    background-color: #3a3c3d;
+    color: #b8c8d9;
 }
