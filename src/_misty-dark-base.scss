@@ -397,9 +397,16 @@ tt {
     font-family: "SF Mono", "Iosevka", "Ubuntu Mono", "Hack", "Input", Consolas,
         "Liberation Mono", Menlo, Courier, monospace, "Sarasa Mono SC",
         "PingFang SC", "Microsoft YaHei", "微软雅黑";
-    padding: 2px 4px 0px 4px;
-    font-size: 0.9em;
-    color: inherit;
+        padding: 2px 4px 0px 4px;
+        font-size: 0.9em;
+        color: inherit;
+    }
+    
+    .md-meta-block{
+        
+        font-family: "SF Mono", "Iosevka", "Ubuntu Mono", "Hack", "Input", Consolas,
+            "Liberation Mono", Menlo, Courier, monospace, "Sarasa Mono SC",
+            "PingFang SC", "Microsoft YaHei", "微软雅黑";
 }
 
 .md-tag {

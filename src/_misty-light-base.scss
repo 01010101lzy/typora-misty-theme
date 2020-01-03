@@ -15,22 +15,26 @@ html {
 }
 
 body {
-    font-family: "SF UI Text", "PingFang SC", -apple-system, -apple-system-body, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "微软雅黑", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "SF UI Text", "PingFang SC", -apple-system, -apple-system-body,
+        BlinkMacSystemFont, "Iosevka Sparkle", "Sarasa Gothic SC",
+        "Sarasa Gothic TC", "Sarasa Gothic JP", "Sarasa Gothic KR", "Segoe UI",
+        "Microsoft YaHei", "微软雅黑", Helvetica, Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     /*font-family: -apple-system, -apple-system-body, BlinkMacSystemFont, "PingFang SC", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
     color: #24292e;
     line-height: 1.5;
     font-weight: 300;
 }
 
-#write{
+#write {
     max-width: 860px;
-  	margin: 0 auto;
-  	padding: 20px 30px 40px 30px;
-	padding-top: 20px;
+    margin: 0 auto;
+    padding: 20px 30px 40px 30px;
+    padding-top: 20px;
     padding-bottom: 100px;
 }
 #write > ul:first-child,
-#write > ol:first-child{
+#write > ol:first-child {
     margin-top: 30px;
 }
 
@@ -41,7 +45,7 @@ body > *:last-child {
     margin-bottom: 0 !important;
 }
 a {
-    color: #4183C4;
+    color: #4183c4;
 }
 h1,
 h2,
@@ -89,20 +93,20 @@ h5 code {
 }
 h6 tt,
 h6 code {
-font-size: inherit;
+    font-size: inherit;
 }
 h1 {
     text-align: center;
-    padding-bottom: .3em;
+    padding-bottom: 0.3em;
     font-size: 2.25em;
     line-height: 1.2;
     margin: 1em auto 1.2em auto;
     font-weight: 300;
     /*border-bottom: 1px solid #eee;*/
 }
-h1:after{
-border-bottom: 2px dashed #afec9e;
-    content: '';
+h1:after {
+    border-bottom: 2px dashed #afec9e;
+    content: "";
     width: 100px;
     display: block;
     margin: 0.2em auto 0 auto;
@@ -112,7 +116,7 @@ border-bottom: 2px dashed #afec9e;
     margin-top: 0.83rem;
 }*/
 h2 {
-   /*padding-bottom: .3em;
+    /*padding-bottom: .3em;
     font-size: 1.75em;
     line-height: 1.225;
     border-bottom: 1px solid #eee;*/
@@ -128,7 +132,7 @@ h3 {
 h3:before {
     border-radius: 50%;
     background-color: #9ed0ff;
-    content: '';
+    content: "";
     width: 6px;
     display: inline-block;
     height: 6px;
@@ -136,8 +140,8 @@ h3:before {
     margin-bottom: 0.18em;
     margin-right: 8px;
 }
-#write>h3.md-focus:before,
-#write>h4.md-focus:before {
+#write > h3.md-focus:before,
+#write > h4.md-focus:before {
     background-color: transparent;
     width: auto;
     height: auto;
@@ -147,7 +151,7 @@ h4 {
 }
 h4:before {
     background-color: #9ed0ff;
-    content: '';
+    content: "";
     width: 6px;
     display: inline-block;
     height: 2px;
@@ -159,7 +163,7 @@ h5 {
     font-size: 1em;
 }
 h6 {
-   font-size: 1em;
+    font-size: 1em;
     color: #777;
 }
 p,
@@ -167,19 +171,19 @@ blockquote,
 ul,
 ol,
 dl,
-table{
+table {
     margin: 0.8em 0;
 }
-li>ol,
-li>ul {
+li > ol,
+li > ul {
     margin: 0 0;
 }
 hr {
-  height: 0.25em;
-  padding: 0;
-  margin: 24px 0;
-  background-color: #e1e4e8;
-  border: 0;
+    height: 0.25em;
+    padding: 0;
+    margin: 24px 0;
+    background-color: #e1e4e8;
+    border: 0;
 }
 
 body > h2:first-child {
@@ -248,22 +252,22 @@ table {
     word-break: initial;
 }
 table tr {
-    border-top: 1px solid #DADFE6;
+    border-top: 1px solid #dadfe6;
     margin: 0;
     padding: 0;
 }
 table.md-table tr:nth-child(2n) {
-    background-color: #FAFBFC;
+    background-color: #fafbfc;
 }
 table tr th {
     font-weight: 400;
-    border: 1px solid #DADFE6;
+    border: 1px solid #dadfe6;
     text-align: left;
     margin: 0;
     padding: 6px 13px;
 }
 table tr td {
-    border: 1px solid #DADFE6;
+    border: 1px solid #dadfe6;
     text-align: left;
     margin: 0;
     padding: 6px 13px;
@@ -289,10 +293,13 @@ tt {
     /*font-family: Consolas, "Liberation Mono", Courier, monospace;*/
     /*padding: 2px 4px 0px 4px;*/
     /*font-size: 0.9em;*/
-    font-family: "SF Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace, "PingFang SC", "Microsoft YaHei", "微软雅黑";
+    font-family: "SF Mono", "Iosevka", "Ubuntu Mono", "Hack", "Input", Consolas,
+        "Liberation Mono", Menlo, Courier, monospace, "Sarasa Mono SC",
+        "PingFang SC", "Microsoft YaHei", "微软雅黑";
 }
 
-code, tt {
+code,
+tt {
     margin: 0 2px;
     padding: 2px 4px;
     background-color: #e2f0ff;
@@ -316,7 +323,7 @@ code, tt {
 	padding-left:32px;
 }*/
 
-.md-task-list-item>input {
+.md-task-list-item > input {
     margin-left: -1.45em;
     margin-top: calc(0.9em - 10px);
 }
@@ -342,7 +349,7 @@ code, tt {
 }
 
 #write pre.md-meta-block {
-	padding: 1rem;
+    padding: 1rem;
     font-size: 85%;
     line-height: 1.45;
     /*background-color: #f7f7f7;*/
@@ -353,42 +360,44 @@ code, tt {
     margin-top: 0 !important;
 }
 
-.mathjax-block>.code-tooltip {
-	bottom: .375rem;
+.mathjax-block > .code-tooltip {
+    bottom: 0.375rem;
 }
 
-#write>h3.md-focus:before{
-	left: -1.5625rem;
-	top: .375rem;
+#write > h3.md-focus:before {
+    left: -1.5625rem;
+    top: 0.375rem;
 }
-#write>h4.md-focus:before{
-	left: -1.5625rem;
-	top: .285714286rem;
+#write > h4.md-focus:before {
+    left: -1.5625rem;
+    top: 0.285714286rem;
 }
-#write>h5.md-focus:before{
-	left: -1.5625rem;
-	top: .285714286rem;
+#write > h5.md-focus:before {
+    left: -1.5625rem;
+    top: 0.285714286rem;
 }
-#write>h6.md-focus:before{
-	left: -1.5625rem;
-	top: .285714286rem;
+#write > h6.md-focus:before {
+    left: -1.5625rem;
+    top: 0.285714286rem;
 }
-.md-image>.md-meta {
+.md-image > .md-meta {
     border: 1px solid #ddd;
     border-radius: 3px;
-    font-family: "SF Mono", Consolas, "PingFang SC", "Liberation Mono", Courier, monospace, "Microsoft YaHei", "微软雅黑";
+    font-family: "SF Mono", "Iosevka", "Ubuntu Mono", "Hack", "Input", Consolas,
+        "Liberation Mono", Menlo, Courier, monospace, "Sarasa Mono SC",
+        "PingFang SC", "Microsoft YaHei", "微软雅黑";
     padding: 2px 4px 0px 4px;
     font-size: 0.9em;
     color: inherit;
 }
 
-.md-tag{
-	color: inherit;
+.md-tag {
+    color: inherit;
 }
 
-.md-toc { 
-    margin-top:20px;
-    padding-bottom:20px;
+.md-toc {
+    margin-top: 20px;
+    padding-bottom: 20px;
 }
 
 .sidebar-tabs {
@@ -401,8 +410,8 @@ code, tt {
 }
 
 #typora-quick-open-item {
-    background-color: #FAFAFA;
-    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    background-color: #fafafa;
+    border-color: #fefefe #e5e5e5 #e5e5e5 #eee;
     border-style: solid;
     border-width: 1px;
 }
@@ -428,12 +437,19 @@ code, tt {
     border-left-color: rgba(85, 85, 85, 0.12);
 }
 
-header, .context-menu, .megamenu-content, footer{
-  font-family: "SF UI Text", "PingFang SC", -apple-system, -apple-system-body, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "微软雅黑", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+header,
+.context-menu,
+.megamenu-content,
+footer {
+    font-family: "SF UI Text", "PingFang SC", -apple-system, -apple-system-body,
+        BlinkMacSystemFont, "Iosevka Sparkle", "Sarasa Gothic SC",
+        "Sarasa Gothic TC", "Sarasa Gothic JP", "Sarasa Gothic KR", "Segoe UI",
+        "Microsoft YaHei", "微软雅黑", Helvetica, Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .file-node-content:hover .file-node-icon,
-.file-node-content:hover .file-node-open-state{
+.file-node-content:hover .file-node-open-state {
     visibility: visible;
 }
 
@@ -448,20 +464,25 @@ header, .context-menu, .megamenu-content, footer{
 .pin-outline .outline-active,
 .pin-outline #outline-content .outline-active strong {
     font-weight: 400;
-    color: rgb(35,35,35);
+    color: rgb(35, 35, 35);
 }
 
 .outline-label {
     font-weight: 300;
-    color: rgb(100,100,100);
+    color: rgb(100, 100, 100);
 }
 
-strong, b {
+strong,
+b {
     font-weight: 500;
 }
 
 .file-list-item-summary {
-    font-family: "SF UI Text", "PingFang SC", -apple-system, -apple-system-body, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "微软雅黑", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "SF UI Text", "PingFang SC", -apple-system, -apple-system-body,
+        BlinkMacSystemFont, "Iosevka Sparkle", "Sarasa Gothic SC",
+        "Sarasa Gothic TC", "Sarasa Gothic JP", "Sarasa Gothic KR", "Segoe UI",
+        "Microsoft YaHei", "微软雅黑", Helvetica, Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .file-list-item-file-name {
@@ -473,3 +494,9 @@ strong, b {
     width: 50%;
     text-align: center;
 }*/
+
+.md-meta-block {
+    font-family: "SF Mono", "Iosevka", "Ubuntu Mono", "Hack", "Input", Consolas,
+        "Liberation Mono", Menlo, Courier, monospace, "Sarasa Mono SC",
+        "PingFang SC", "Microsoft YaHei", "微软雅黑";
+}
